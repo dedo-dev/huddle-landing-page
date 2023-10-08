@@ -1,0 +1,115 @@
+/* ---------- CSS RESET ----------- */
+
+/* box-sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* remove default margin */
+body, h1, p {
+  margin: 0;
+}
+
+/* set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* set line-heigths on heading & interactive element */
+/* h1, button {
+  line-height: 1.5;
+} */
+
+/* balance text-wrap on headings */
+/* h1 {
+  text-wrap: balance;
+} */
+
+/* set image and picture */
+img, picture {
+  width: 100%;
+  display: block;
+}
+
+/* inherit fonts */
+button {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+/* ---------- CSS VARIABLE ---------- */
+
+:root {
+
+  /* color sistem */
+  --clr-violet: hsl(257, 40%, 49%);
+  --clr-magenta: hsl(300, 69%, 71%);
+
+  /* typography */
+  --ff-poppins: 'Poppins', sans-serif;
+  --ff-openSans: 'Open Sans', sans-serif;
+  --fw-400: 400;
+  --fw-600: 600;
+}
+
+
+body {
+  background: var(--clr-violet);
+  color: #fff;
+  font-family: var(--ff-openSans);
+  /* position: relative; */
+}
+
+.header {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.logo {
+ width: 8rem;
+}
+
+.bg-svg {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+} 
+
+.wrapper {
+  width: 80%;
+  margin: 3.8rem auto;
+  text-align: center;
+}
+
+.hero__heading {
+  font-family: var(--ff-poppins);
+  font-size: 1.7rem;
+}
+
+.btn {
+  font-family: var(--ff-poppins);
+  color: var(--clr-violet);
+  border: none;
+  padding: .75em 5em;
+  border-radius: 100px;
+}
+
+.icons-wrapper {
+  display: flex;
+}
+
+.icon {
+  width: 2.5rem;
+}
+
+
+
+
+
+
+
+.attribution { font-size: 12px; text-align: center; }
+.attribution a { color: var(--clr-magenta) }
