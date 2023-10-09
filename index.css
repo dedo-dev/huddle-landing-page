@@ -16,25 +16,10 @@ body {
   line-height: 1.5;
 }
 
-/* set line-heigths on heading & interactive element */
-/* h1, button {
-  line-height: 1.5;
-} */
-
-/* balance text-wrap on headings */
-/* h1 {
-  text-wrap: balance;
-} */
-
 /* set image and picture */
 img, picture {
   width: 100%;
   display: block;
-}
-
-/* inherit fonts */
-button {
-  font: inherit;
 }
 
 a {
@@ -60,7 +45,7 @@ body {
   background: var(--clr-violet);
   color: #fff;
   font-family: var(--ff-openSans);
-  /* position: relative; */
+  font-size: 1rem;
 }
 
 .header {
@@ -69,10 +54,11 @@ body {
 }
 
 .logo {
- width: 8rem;
+ width: 9rem;
 }
 
 .bg-svg {
+  /* width: 100%; */
   position: absolute;
   top: 0;
   z-index: -1;
@@ -86,23 +72,118 @@ body {
 
 .hero__heading {
   font-family: var(--ff-poppins);
-  font-size: 1.7rem;
+  font-size: 1.65rem;
+  font-weight: var(--fw-600);
+  margin-top: 3rem;
+}
+
+.hero__content {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .btn {
+  display: inline;
   font-family: var(--ff-poppins);
+  font-size: .9375rem;
+  background: #fff;
   color: var(--clr-violet);
-  border: none;
-  padding: .75em 5em;
+  box-shadow: 0 3px 10px 0px rgba(0, 0, 0, .5);
+  padding: .65em 3.5em;
   border-radius: 100px;
+}
+
+.btn:focus,
+.btn:hover {
+  background: var(--clr-magenta);
+  color: #fff;
+  cursor: pointer;
 }
 
 .icons-wrapper {
   display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
 }
 
-.icon {
-  width: 2.5rem;
+.icons-wrapper svg path:focus,
+.icons-wrapper svg path:hover {
+  stroke: var(--clr-magenta);
+  fill: var(--clr-magenta);
+  cursor: pointer;
+}
+
+@media (min-width: 43.75em) {
+  
+  .wrapper {
+    width: 90%;
+    max-width: 43rem;
+  }
+  
+  .mockups {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .hero__heading {
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+  }
+
+  .hero__content {
+    /* font-size: 1.2rem; */
+    width: 80%;
+    margin-inline: auto;
+  }
+
+  .icons-wrapper {
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 75em) {
+  
+  .header {
+    width: 90%;
+    margin: 3rem auto;
+  }
+
+  .logo {
+    width: 10rem;
+  }
+
+  .wrapper {
+    width: 90%;
+    max-width: 90rem;
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    column-gap: 3rem;
+    text-align: left;
+  }
+
+  .mockups {
+    width: 100%;
+  }
+
+  .hero__heading {
+    font-size: 2rem;
+    width: 80%;
+    margin-top: 4rem;
+  }
+
+  .hero__content {
+
+    font-size: .99rem;
+    width: 100%;
+    margin-inline: 0;
+  }
+
+  .icons-wrapper {
+    justify-content: flex-end;
+    grid-column: 2;
+    align-self: end;
+  }
 }
 
 
