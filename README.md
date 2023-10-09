@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/huddle-landing-page-LZHVa2UNH-
 - Live Site URL: https://dedo-dev.github.io/huddle-landing-page/
 
 ## My process
