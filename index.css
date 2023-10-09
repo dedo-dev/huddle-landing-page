@@ -83,7 +83,7 @@ body {
 }
 
 .btn {
-  display: inline;
+  display: inline-flex;
   font-family: var(--ff-poppins);
   font-size: .9375rem;
   background: #fff;
