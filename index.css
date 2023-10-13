@@ -42,7 +42,9 @@ a {
 
 
 body {
-  background: var(--clr-violet);
+  background-image: url(images/bg-mobile.svg);
+  background-repeat: no-repeat;  
+  background-color: var(--clr-violet);
   color: #fff;
   font-family: var(--ff-openSans);
   font-size: 1rem;
@@ -57,12 +59,12 @@ body {
  width: 9rem;
 }
 
-.bg-svg {
-  /* width: 100%; */
+/* .bg-svg {
+  width: 100%;
   position: absolute;
   top: 0;
   z-index: -1;
-} 
+}  */
 
 .wrapper {
   width: 80%;
@@ -115,7 +117,12 @@ body {
 }
 
 @media (min-width: 43.75em) {
-  
+  body {
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .wrapper {
     width: 90%;
     max-width: 43rem;
